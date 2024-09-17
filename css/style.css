@@ -1,0 +1,188 @@
+
+#mainNav{
+	background-color: #623f379e;
+	height: 100px;
+}
+.header{
+	width: 100%;
+	height: 100vh;
+	padding-top: 10rem;
+  	padding-bottom: calc(10rem - 4.5rem);
+	background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../images/bg-masthead.jpg");
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-attachment: scroll;
+  	background-size: cover;
+}
+
+#navbarResponsive ul li a{
+	color: #fff;
+	font-size: 1.2rem;
+}
+#navbarResponsive ul li a::after {
+        width: 0;
+        content: "";
+        height: 4px;
+        background-color: orange;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        transition: width 0.3s ease;
+}
+
+#navbarResponsive ul li a.active::after {
+   text-decoration-color: aqua;
+
+}
+.headertag{
+	font-family: georgia;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 3rem;
+	padding-top: 120px;
+}
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #f4623a;
+}
+
+hr.light {
+  border-color: #fff;
+}
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+  background-color: #f4511e;
+  color: #fff;
+  margin-top: 5%;
+}
+.btn-xl span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-xl span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn-xl:hover span {
+  padding-right: 25px;
+  font-size: 1.10rem;
+  color: #fff;
+}
+.btn-xl:hover span:after {
+  opacity: 1;
+  right: 0;
+  color: #fff;
+}
+
+.about{
+	background-color: #f4511e;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.about h2, .about h3{
+	font-family: georgia;
+}
+.about p{
+	color: #f8f9fa;
+	font-family: georgia;
+	font-size: 1.1rem;
+}
+.Symptoms{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	font-family: georgia;
+}
+.sympimg{
+	width: 100px;
+	height: 100px;
+}
+#Precaution h2{
+	font-family: georgia;
+}
+.faqHeaderh2{
+	font-family: georgia;
+}
+.gallery{
+	font-family: georgia;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 90px;
+	margin-left: 120px;
+} 
+.gallery img{
+	transition: 1s;
+	padding: 15px;
+	width: 220px;
+	height: 220px;
+}
+.gallery img:hover{
+transform: scale(1.5);
+}
+.faqHeader {
+	font-size: 27px;
+	margin: 20px;
+
+
+}.faqHeader {
+	font-size: 27px;
+	margin: 20px;
+}
+.FAQ{
+	padding-bottom: 50px;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+	font-family: 'Glyphicons Halflings';
+	content: "e072"; /* "play" icon */
+	float: right;
+	color: #F58723;
+	font-size: 18px;
+	line-height: 22px;
+	/* rotate "play" icon from > (right arrow) to down arrow */
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+	/* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+	color: #454444;
+}
+footer {
+	background: #061D25;
+	padding: 10px 0;
+	text-align: center;
+  }
+  footer a {
+	color: #70726F;
+	font-size: 20px;
+	padding: 10px;
+	border-right: 1px solid #70726F;
+	transition: all .5s ease;
+  }
+  footer a:first-child {
+	border-left: 1px solid #70726F;
+  }
+  footer a:hover {
+	color: white;
+  }
